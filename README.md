@@ -67,7 +67,7 @@ After execution, `JsonString` will be:
 - Only non-empty strings are included in the output JSON.
 - The output string is limited to 255 characters. If the total JSON exceeds this, it will be truncated.
 - The function block must be called with `FBEN := TRUE` to execute. `FBENO` will be set to `TRUE` when done.
-- Designed for use in Micro850 PLCs with Structured Text (ST) in CCW.
+- Designed for use in Micro850 PLCs as a UDFB written in Structured Text (ST) in CCW.
 
 ## License
 This code is provided as-is for educational and industrial automation purposes.
