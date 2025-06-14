@@ -1,4 +1,4 @@
-# JSONMaker UDFB for Rockwell Micro850 (Structured Text)
+# JSONMaker UDFB for Rockwell Micro850
 
 ## Overview
 `JSONMaker` is a User Defined Function Block (UDFB) written in Structured Text for Rockwell Micro850 PLCs. It concatenates an input array of strings into a single JSON-formatted string, using keys "A" through "T" for up to 20 elements. Only non-empty strings are included in the output JSON.
