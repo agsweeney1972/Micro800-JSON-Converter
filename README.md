@@ -3,6 +3,8 @@
 ## Overview
 `JSONMaker` is a User Defined Function Block (UDFB) written in Structured Text for Rockwell Micro850 PLCs. It concatenates an input array of strings into a single JSON-formatted string, using keys "A" through "T" for up to 20 elements. Only non-empty strings are included in the output JSON.
 
+![UDFB Overview](Images/JSONMaker_UFDB.png)
+
 ## Features
 - Accepts an input array of up to 20 strings (`InArray`), each up to 32 characters.
 - Outputs a JSON string (`JsonString`) with keys "A" to "T" corresponding to the array indices.
@@ -12,17 +14,24 @@
 
 ## Function Block Interface
 
-### Inputs
+### Input Array
+![Input Array](Images/JSONMaker_UDFB_InputArray.png)
+
 - `InArray : ARRAY[0..19] OF STRING[32]`  
   The array of strings to be concatenated into JSON.
 - `FBEN : BOOL`  
   Set to `TRUE` to enable execution of the function block.
 
-### Outputs
+### Output JSON
+![Output JSON](Images/JSONMaker_UDFB_OutputJSON.png)
+
 - `JsonString : STRING[255]`  
   The resulting JSON string.
 - `FBENO : BOOL`  
   Set to `TRUE` when the function block has completed execution.
+
+### Function Block Variables
+![Function Block Variables](Images/JSONMaker_UDFB_FunctionBlockVariables.png)
 
 ## How It Works
 1. When `FBEN` is set to `TRUE`, the function block starts execution.
